@@ -225,7 +225,7 @@ function App() {
                 ))
               ) : (
                 <>
-                  <tr>Gaada Data</tr>
+                  <tr>DATA YANG ANDA CARI KOSONG</tr>
                 </>
               )}
             </tbody>
