@@ -50,8 +50,8 @@ function App() {
     return age;
   }
 
-  // seacrh NIK
-  const data = Object.values(users);
+  // seacrh NIK]]
+
   const [q, setQ] = useState("");
   const [searchParam] = useState(["nik", "name"]);
   function searchTerm(items) {
@@ -64,9 +64,14 @@ function App() {
     });
   }
 
-  console.log(searchTerm(data));
-
-  console.log(q);
+  // console.log(q);
+  let daata;
+  let usernik;
+  if (users?.length > 0) {
+    daata = Object.values(users);
+    usernik = searchTerm(daata);
+  }
+  console.log(usernik);
 
   return (
     <>
@@ -188,8 +193,8 @@ function App() {
                       </td>
                     </tr>
                   ))
-              ) : searchTerm(data).length > 0 ? (
-                searchTerm(data).map((item, k) => (
+              ) : usernik?.length > 0 ? (
+                usernik?.map((item, k) => (
                   <tr
                     key={k}
                     className="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
@@ -225,7 +230,7 @@ function App() {
                 ))
               ) : (
                 <>
-                  <tr>DATA YANG ANDA CARI KOSONG</tr>
+                  <div>DATA YANG ANDA CARI KOSONG</div>
                 </>
               )}
             </tbody>
