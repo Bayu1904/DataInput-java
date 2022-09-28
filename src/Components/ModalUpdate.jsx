@@ -67,6 +67,7 @@ export default function ModalUpdate({ id, setUpdate }) {
             onChange={handleChange}
             value={form.nik}
             required
+            disabled
           />
           <label htmlFor="name">Nama Lengkap</label>
           <input
