@@ -17,8 +17,8 @@ export default function Modal({
   return (
     <>
       <div className="w-full h-full bg-slate-500 opacity-50 fixed z-20"></div>
-      <div className="bg-slate-200 centered w-[90%] md:w-[35rem] z-50 rounded-lg py-5 ">
-        <div className="text-2xl font-bold mb-3 text-red-600 text-center  gap-2 ">
+      <div className="bg-slate-200 centered w-[90%] md:w-[35rem] z-50 rounded-lg py-5 px-6">
+        <div className="text-2xl font-bold mb-3 text-red-600  gap-2 ">
           Anda yakin menghapus data?
         </div>
         <div className="flex flex-row justify-end mr-10">
