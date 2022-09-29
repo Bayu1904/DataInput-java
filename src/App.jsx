@@ -102,9 +102,6 @@ function App() {
               className="bg-gray-50 border border-gray-300 text-gray-900 text-md rounded-lg focus:outline-blue-500 w-full md:w-96 px-4 py-2"
               onChange={(e) => setQ(e.target.value)}
             />
-            <p className="mt-1 text-sm text-red-600">
-              *input NIK hanya menggunakan nomor
-            </p>
           </div>
           <div className="flex flex-col ">
             <label htmlFor="name">Name</label>
@@ -119,7 +116,7 @@ function App() {
         </div>
         <div className="flex justify-end m-4">
           <button
-            className="flex items-center gap-2 bg-orange-700 text-white px-8 py-2 rounded-lg  hover:bg-orange-800"
+            className="flex items-center gap-2 bg-blue-700 text-white px-8 py-2 rounded-lg  hover:bg-orange-800"
             onClick={() => setModal(!modal)}
           >
             <FaUserPlus size={20} /> Add
@@ -173,19 +170,19 @@ function App() {
                       <td className="py-4 px-6">{item.country}</td>
                       <td className="py-4 px-6 flex flex-row items-center gap-2">
                         <div
-                          className="cursor-pointer hover:text-black hover:font-semibold hover:underline"
+                          className="cursor-pointer text-blue-500 hover:text-blue-600 font-semibold hover:underline"
                           onClick={() => handleDetail(item.id)}
                         >
                           Detail
                         </div>
                         <div
-                          className="cursor-pointer"
+                          className="cursor-pointer text-yellow-500 hover:text-yellow-600 font-semibold hover:underline"
                           onClick={() => handleUpdate(item.id)}
                         >
                           Edit
                         </div>
                         <div
-                          className="cursor-pointer hover:text-red-500 hover:font-semibold hover:underline"
+                          className="cursor-pointer text-red-500 hover:text-red-600 font-semibold hover:underline"
                           onClick={() => handleDelete(item.id)}
                         >
                           Delete
@@ -208,19 +205,19 @@ function App() {
                     <td className="py-4 px-6">{item.country}</td>
                     <td className="py-4 px-6 flex flex-row items-center gap-2">
                       <div
-                        className="cursor-pointer hover:text-black hover:font-semibold hover:underline"
+                        className="cursor-pointer text-blue-500 hover:text-blue-600 font-semibold hover:underline"
                         onClick={() => handleDetail(item.id)}
                       >
                         Detail
                       </div>
                       <div
-                        className="cursor-pointer"
+                        className="cursor-pointer text-yellow-500 hover:text-yellow-600 font-semibold hover:underline"
                         onClick={() => handleUpdate(item.id)}
                       >
                         Edit
                       </div>
                       <div
-                        className="cursor-pointer hover:text-red-500 hover:font-semibold hover:underline"
+                        className="cursor-pointer text-red-500 hover:text-red-600 font-semibold hover:underline"
                         onClick={() => handleDelete(item.id)}
                       >
                         Delete
