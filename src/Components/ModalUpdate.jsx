@@ -8,9 +8,9 @@ export default function ModalUpdate({ id, setUpdate }) {
     const response = await API.get("/users/" + id);
     return response.data;
   });
+  console.log(id);
   const [form, setForm] = useState({
-    id: id,
-    nik: "",
+    nik: id,
     name: "",
     gender: "",
     date: "",
@@ -21,7 +21,6 @@ export default function ModalUpdate({ id, setUpdate }) {
     if (user1) {
       setForm({
         ...form,
-        nik: user1?.nik,
         name: user1?.name,
         gender: user1?.gender,
         date: user1?.date,
@@ -65,6 +64,8 @@ export default function ModalUpdate({ id, setUpdate }) {
             className="bg-gray-50 border border-gray-300 text-gray-900 text-md rounded-lg focus:outline-orange-600 w-full px-4 py-2 mb-3"
             placeholder="Masukan NIK"
             // onChange={handleChange}
+            disabled
+            readOnly
             value={form.nik}
             required
           />

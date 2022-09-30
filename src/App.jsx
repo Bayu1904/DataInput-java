@@ -171,19 +171,19 @@ function App() {
                       <td className="py-4 px-6 flex flex-row items-center gap-2">
                         <div
                           className="cursor-pointer text-blue-500 hover:text-blue-600 font-semibold hover:underline"
-                          onClick={() => handleDetail(item.id)}
+                          onClick={() => handleDetail(item.nik)}
                         >
                           Detail
                         </div>
                         <div
                           className="cursor-pointer text-yellow-500 hover:text-yellow-600 font-semibold hover:underline"
-                          onClick={() => handleUpdate(item.id)}
+                          onClick={() => handleUpdate(item.nik)}
                         >
                           Edit
                         </div>
                         <div
                           className="cursor-pointer text-red-500 hover:text-red-600 font-semibold hover:underline"
-                          onClick={() => handleDelete(item.id)}
+                          onClick={() => handleDelete(item.nik)}
                         >
                           Delete
                         </div>
@@ -206,19 +206,19 @@ function App() {
                     <td className="py-4 px-6 flex flex-row items-center gap-2">
                       <div
                         className="cursor-pointer text-blue-500 hover:text-blue-600 font-semibold hover:underline"
-                        onClick={() => handleDetail(item.id)}
+                        onClick={() => handleDetail(item.nik)}
                       >
                         Detail
                       </div>
                       <div
                         className="cursor-pointer text-yellow-500 hover:text-yellow-600 font-semibold hover:underline"
-                        onClick={() => handleUpdate(item.id)}
+                        onClick={() => handleUpdate(item.nik)}
                       >
                         Edit
                       </div>
                       <div
                         className="cursor-pointer text-red-500 hover:text-red-600 font-semibold hover:underline"
-                        onClick={() => handleDelete(item.id)}
+                        onClick={() => handleDelete(item.nik)}
                       >
                         Delete
                       </div>
