@@ -1,5 +1,5 @@
-import { useMutation } from "react-query";
-import React, { useState } from "react";
+import { useMutation, useQuery } from "react-query";
+import React, { useEffect, useState } from "react";
 import { FaUserPlus } from "react-icons/fa";
 import { API } from "../config/API";
 
@@ -19,7 +19,6 @@ export default function Modal({ modal, setModal }) {
       [e.target.name]: e.target.value,
     });
   };
-  console.log(form);
 
   const handleSubmit = useMutation(async (e) => {
     try {
@@ -32,6 +31,7 @@ export default function Modal({ modal, setModal }) {
       console.log(error);
     }
   });
+
   return (
     <>
       <div className="w-full h-full bg-slate-500 opacity-50 fixed z-20"></div>
@@ -71,6 +71,7 @@ export default function Modal({ modal, setModal }) {
                 id="male"
                 value="Laki-Laki"
                 onChange={handleChange}
+                required
               />
               <label htmlFor="male" className="ml-3 mr-5">
                 Laki-Laki

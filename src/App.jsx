@@ -75,7 +75,7 @@ function App() {
 
   return (
     <>
-      {detail && <DetailModal id={id} setModal={setDetail} />}
+      {detail && <DetailModal id={id} age={getAge} setModal={setDetail} />}
       {confirm && (
         <ConfirmModal
           confirm={confirm}
